@@ -12,8 +12,8 @@ namespace Notes.Persistence.EntityTypeConfiguration
 
         public void Configure(EntityTypeBuilder<Note> builder)
         {
-            builder.HasKey(note => note.ID);
-            builder.HasIndex(note => note.ID).IsUnique();
+            builder.HasKey(note => note.Id);
+            builder.HasIndex(note => note.Id).IsUnique();
             builder.Property(note => note.Title).HasMaxLength(250);
         }
     }

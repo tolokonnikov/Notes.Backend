@@ -8,8 +8,8 @@ namespace Notes.Domain
 {
     public class Note
     {
-        public Guid ID { get; set; }
-        public Guid UserID { get; set; }
+        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
         public string Title { get; set; } = string.Empty;
         public string Details { get; set; } = string.Empty;
         public DateTime CreationDate { get; set; }
